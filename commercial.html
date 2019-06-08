@@ -1,0 +1,124 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+
+<meta charset='utf-8' />
+
+<title>Neterwala and Aibara</title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-57800093-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<link rel="stylesheet" href="css/superslides.css">
+    <script type="text/javascript" src="js/jquery-1.7.min.js" charset="utf-8"></script>
+	<script type="text/javascript" src="js/jquery.address-1.5.min.js" charset="utf-8"></script>
+	<script type="text/javascript" src="js/jquery-ui-1.8.9.custom.min.js" charset="utf-8"></script>
+	<script type="text/javascript" src="js/jquery.scrollTo-1.4.3.1-min.js" charset="utf-8"></script>
+	<script type="text/javascript" src="js/jquery.screwdefaultbuttons.min.js" charset="utf-8"></script>
+	<script type="text/javascript" src="js/jquery.html5-placeholder-shim.js" charset="utf-8"></script>
+	<script type="text/javascript" src="js/jquery.mousewheel.js" charset="utf-8"></script>
+	<script type="text/javascript" src="js/jquery.jscrollpane.min.js"></script>
+	<script type="text/javascript" src="js/jquery.touchwipe.min.js" charset="utf-8"></script>
+	<script type="text/javascript" src="js/lightbox.js" charset="utf-8"></script>
+	<script type="text/javascript" src="js/pageObject.js" charset="utf-8"></script>
+	<script type="text/javascript" src="js/home.js" charset="utf-8"></script>
+	<script type="text/javascript" src="js/commercial.js" charset="utf-8"></script>
+	<script type="text/javascript" src="js/residential.js" charset="utf-8"></script>
+	<script type="text/javascript" src="js/contract.js" charset="utf-8"></script>
+	<script type="text/javascript" src="js/collection.js" charset="utf-8"></script>
+	<script type="text/javascript" src="js/product.js" charset="utf-8"></script>
+	<script type="text/javascript" src="js/news.js" charset="utf-8"></script>
+	<script type="text/javascript" src="js/areaRiservata.js" charset="utf-8"></script>
+	<script type="text/javascript" src="js/jquery.superslides.js" charset="utf-8"></script> 
+  <script>
+    $(function() {
+      $('#slides').superslides({
+		animation: 'fade',
+		pagination: false,
+        hashchange: false
+      });
+
+    });
+  </script>
+
+
+	<script>
+		$(function() {
+			var pull 		= $('#pull');
+				menu 		= $('nav ul');
+				menuHeight	= menu.height();
+
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+
+			$(window).resize(function(){
+        		var w = $(window).width();
+        		if(w > 320 && menu.is(':hidden')) {
+        			menu.removeAttr('style');
+        		}
+    		});
+		});
+	</script>
+
+<script type="text/javascript">
+
+    	$(document).on('ready', function() {
+
+    		PO.init();
+    	})
+
+    </script>
+
+</head>
+
+<body>
+
+  <div id="slides">
+    <div class="slides-container">
+      <img src="img/commercial/commercial1.jpg" alt="commercial-1">
+      <img src="img/commercial/commercial2.jpg" alt="commercial-1">
+      <img src="img/commercial/commercial3.jpg" alt="commercial-1">
+      <img src="img/commercial/commercial4.jpg" alt="commercial-1">
+      <img src="img/commercial/commercial5.jpg" alt="commercial-1">
+      <img src="img/commercial/commercial6.jpg" alt="commercial-1">
+      <img src="img/commercial/commercial7.jpg" alt="commercial-1">
+      <img src="img/commercial/commercial8.jpg" alt="commercial-1">
+      <img src="img/commercial/commercial9.jpg" alt="commercial-1">
+      <img src="img/commercial/commercial10.jpg" alt="commercial-1">
+      <img src="img/commercial/commercial11.jpg" alt="commercial-1">
+      <img src="img/commercial/commercial12.jpg" alt="commercial-1">
+    </div>
+
+    <nav class="slides-navigation">
+      <a class="next"><img src="img/arrow-right.png"></a>
+      <a class="prev"><img src="img/arrow-left.png"></a>
+    </nav>
+
+    <nav class="slider-navigation">
+      <a class="residential" href="#commercial" rel="address:/commercial">COMMERCIAL</a>
+      <a class="line">|</a>	  
+      <a class="commercials" id="nonactive_slider" href="#residential" rel="address:/residential">RESIDENTIAL</a>
+      <a class="published" id="nonactive_slider" href="#published" rel="address:/published">PUBLISHED</a>	
+    </nav>
+
+	
+	
+  </div>
+
+</body>
+
+</html>
+
